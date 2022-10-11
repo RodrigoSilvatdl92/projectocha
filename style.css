@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin:0;
+}
+
+:root{
+    --vermelha: #2d0606;
+    --cinzentoescuro:#434343;
+    --cinzentoclaro:#a5a6a5;
+    --branco:#ffffff;
+
+    --font-titulo: 'Dancing Script', cursive;
+    --font-normal:helvetica;
+}
+
+/*CABECALHO DAS PAGINAS*/
+
+header{
+    background-color:var(--cinzentoescuro);
+    border: 5px solid black;
+    
+}
+
+header > h1{
+    text-align:center;
+    font-size:60px;
+    font-family:var(--font-titulo);
+    padding:20px;
+}
+
+.cabecalhopagina{
+    display:flex;
+    position:relative;
+}
+
+.logo{
+    flex:1;
+}
+
+.logo  img{
+    height: 130px;
+    width:150px;
+    padding:10px;
+}
+/*menu*/
+.menunav{
+    flex:1;
+    position:absolute;
+    bottom:0;
+    right:0;
+ }
+
+ .menunav nav ul{
+    display:inline-flex;
+    list-style:none;
+ }
+
+ .menunav nav ul li{
+    width:100px;
+    margin-left:10px; 
+    padding:10px;
+ }
+ .menunav nav ul li a{
+    text-decoration:none;
+    color:var(--branco);
+    font-size:15px;
+    font-weight:bolder;
+}
+
+ .menunav nav ul li:hover{
+    background-color: var(--vermelha);
+ }
+
+/*submenu  */
+ .submenu{
+    display:none;
+ }
+
+ .menunav nav ul li:hover .submenu{
+    display:block;
+    background-color:rgba(0, 0, 0, 0.399);
+    position:absolute;
+    margin-top:10px;    
+    margin-left:-10px;
+ }
+
+ .menunav nav ul li:hover .submenu ul{
+    display:block;
+    padding:0px;
+ }
+
+ .menunav nav ul li:hover .submenu ul li{
+    margin:0px;
+ }
+/*---------------------------------------------------- FOOTER ------------------------------------------------------*
+------------------------------------------------------*------------------------------------------------------*-----------------*/
+footer{
+    background-color:var(--cinzentoescuro);
+}
+
+.rodapé{
+    display:flex;
+ }
+ 
+.container{
+    flex:1;
+    background-color:var(--cinzentoescuro);
+    height:30vh;
+    text-align:center;
+} 
+
+.containerdentro{
+    width:12vw;
+    margin-right:auto;
+    margin-left:auto;
+    display:inline-block;
+    text-align:left;
+}
+
+.containerdentro > h3{
+   margin-top:30px;
+}
+
+.containerdentro > p{
+    margin-top:30px;
+    color:white;
+}
+
+.containerdentro a{
+    text-decoration:none;
+    color:white;
+    
+}
+
+.containerfundo{
+    margin-top:15vh;
+    background-color:var(--cinzentoescuro);
+    margin-left:10px;
+}
+
+.containerfundo p {
+    color:white;
+    padding:5px;
+}
+.containerfundo a{
+    font-size:20px;
+    color:white;
+    
+}
+ /*Pagina index*/
+
+
+
+ #imagem1{
+    width:99vw;
+    height:1200px;
+    background-image:url(imagens/chaplanta.jpg);
+    background-size:cover;
+    background-position:right center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    box-shadow:inset 6px 6px 13px 0px black; 
+ }
+
+#textonaimagemprincipal{
+    padding:30px;
+    width:15vw;
+    display:inline-block;
+    position:absolute;
+    transform:translate(-170%, 70%) ;
+    background-color:rgba(0, 0, 0, 0.399);
+    color:white;
+    position:absolute;
+    bottom:0;
+    right:0;
+           
+}
+
+#textonaimagemprincipal > h2{
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+#textonaimagemprincipal > p{
+    padding:5px;
+    font-size:18px;
+}
