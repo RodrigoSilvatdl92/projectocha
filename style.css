@@ -103,6 +103,7 @@ footer{
 
 .rodapé{
     display:flex;
+    height:300px;
  }
  
 .container{
@@ -136,7 +137,7 @@ footer{
 }
 
 .containerfundo{
-    margin-top:15vh;
+    padding-top:30px;
     background-color:var(--cinzentoescuro);
     margin-left:10px;
 }
